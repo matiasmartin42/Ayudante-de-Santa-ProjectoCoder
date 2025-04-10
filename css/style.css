@@ -1,5 +1,5 @@
 html {
-    font-size: 62, 5%;
+    font-size: 62.5%;
 }
 
 /* 1rem = 10px */
@@ -15,6 +15,54 @@ html {
 
 
 */
+/* Logo Principal */
+
+.logo-principal {
+    width: 30rem;
+    height: 100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/*Estilos de Header general*/
+.estilo-header {
+    background-color: #ffb24d;
+
+}
+
+.barra-de-busqueda {
+    text-align: center;
+}
+
+.buscador {
+    margin-top: 20px;
+    width: 622px;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: #ffb24d;
+    border-top: #ffb24d;
+    border-left: #ffb24d;
+}
+
+/* Estilos del Nav */
+.menu-nav {
+    text-align: center;
+}
+
+.barra-botones {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 0px;
+}
 
 
 /*Estilos del Body general*/
@@ -28,80 +76,65 @@ a {
     font-weight: lighter;
 }
 
-/*Estilos de Header general*/
-.estilo-header {
-    background-color: #ffb24d;
-
-}
-
-.barra-de-busqueda {
-    text-align: center;
-}
-
-.buscador {
-    width: 622px;
-    padding: 10px;
-    border-radius: 10px;
-    border-color: #ffb24d;
-    border-top: #ffb24d;
-    border-left: #ffb24d;
-}
-
-/* Logo Principal */
-
-.logo-principal {
-    width: 20rem;
-    height: 100px;
-}
-
-/*Estilos de Footer general*/
-
-.estilo-footer {
-    background-color: #584d4d;
-
-}
-
-/*Footer Subtitulos*/
-
-.footer-subtitulos {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bolder;
-
-}
-
-
-
-/*Banners General*/
+/* Banners General */
 
 .banner-nav {
     width: 100%;
-    height: 1, 5em;
+    height: 30%;
+
 }
 
-/*Estilos del Nav Padre */
-.menu-nav {
-    text-align: center;
+/* CSS para la sección de contenido en Grid */
+#contenido-principal .grid-contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    /* Ajustar las filas segun vea necesario */
 }
 
-/* Botones del Nav (Hijo de .menu-nav)*/
 
-.barra-botones {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+
+/*Estilos de Footer general*/
+
+.footer-main {
+    background-color: #494848;
+    height: 100%;
 }
 
-/* Lista Desordenada general */
+.footer-box-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 20px;
+}
 
 ul {
     list-style-type: none;
+
 }
 
-/* Estilo de Nav */
+li {
+    color: aliceblue;
+    padding: 0.2em;
+    margin: 0.5em;
+    border-radius: 20px;
+
+}
 
 a {
+    color: white;
     text-decoration: none;
     margin: 30px;
+    font-weight: bolder;
+    font-size: medium;
 }
 
 
@@ -124,8 +157,8 @@ a {
 
 /* Responsive mobile */
 
-@media (max-width:500px){
-    header{
+@media (max-width:500px) {
+    header {
         flex-direction: column;
     }
 }

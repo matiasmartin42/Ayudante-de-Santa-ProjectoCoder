@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--css boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Ayudante de Santa</title>
@@ -16,67 +15,105 @@
 </head>
 
 <body>
-    <header class="estilo-header">
+    <header class="row estilo-header">
         <img src="/assets/Logo ayudante de santa.png" alt="Ayudante-de-santa-logo" class="logo-principal">
-        <div class="barra-de-busqueda"> <!--Falta acomodar y estilizar la barra-->
+        <div class="barra-de-busqueda col-md-8">
             <input class="buscador" placeholder="Buscar" required>
             <div class="btn">
                 <i class="fas fa-search-dollar"></i>
             </div>
             <!--Menu nav bar-->
+            <nav class="menu-nav">
+                <ul class="barra-botones">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="pages/perros.html">Perros</a></li>
+                    <li><a href="pages/gatos.html">Gatos</a></li>
+                    <li><a href="pages/accesorios.html">Accesorios</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu-nav">
-            <ul class="barra-botones">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="pages/perros.html">Perros</a></li>
-                <li><a href="pages/gatos.html">Gatos</a></li>
-                <li><a href="pages/accesorios.html">Accesorios para mascotas</a></li>
-            </ul>
-        </nav>
+
     </header>
     <main>
-        <img src="/assets/banner-catydogs.webp" alt="banner" class="banner-nav">
-        <!--Fotos (prueba no final)-->
-        <div>
-            <img src="/assets/perro-con-sueter.jpg" alt="foto-perro" class="banner-nav">
-
-            <p>Pero mira que lindo perrito Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, iusto?
-                Commodi, laudantium cupiditate vero similique iusto nobis quam cumque ullam maxime saepe, deleniti quo
-                cum expedita officiis omnis maiores dolore!</p>
+        <div class="row">
+            <div class="col-lg-12 ">
+                <img src="/assets/banner-catydogs.webp" alt="Banner" class="img-fluid w-100">
+            </div>
         </div>
+        <!-- Sección de contenido con Grid -->
+        <section id="seccion-productos" class="py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Caja 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/gato1.jpg" class="card-img-top" alt="Alimento Perruno">
+                            <div class="card-body">
+                                <h5 class="card-title">Alimento Perruno</h5>
+                                <p class="card-text">
+                                    Aqui encontraras variedad de alimentos para tu perrito del hogar.
+                                </p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Caja 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/gato2.jpg" class="card-img-top" alt="Gato 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Gato Siamés</h5>
+                                <p class="card-text">
+                                    Descripción breve del gato siamés.
+                                </p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Caja 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="img/gato3.jpg" class="card-img-top" alt="Gato 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Gato Bengalí</h5>
+                                <p class="card-text">
+                                    Descripción breve del gato bengalí.
+                                </p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
 
-
-
-
-    </main>
-
-    <footer class="estilo-footer">
-        <section>
-            <h3 class="footer-subtitulos">Sobre nosotros</h3>
-            <ul>
-                <li>
-                    <a href="/pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+                </div> <!-- row -->
+            </div> <!-- container -->
         </section>
-        <section>
-            <div>
-                <h3 class="footer-subtitulos">Categorias</h3>
+    </main>
+    <footer class="footer-main">
+        <section class="footer-box-section">
+            <div class="footer-h3">
+                <h3>Sobre nosotros</h3>
+                <ul>
+                    <li>
+                        <a href="/pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-h3">
+                <h3>Categorias</h3>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="/pages/contacto.html">Contacto</a></li>
                     <li><a href="/pages/perros.html">Perros</a></li>
                     <li><a href="/pages/gatos.html">Gatos</a></li>
-                    <li><a href="/pages/accesorios.html">Accesorios para mascotas</a></li>
+                    <li><a href="/pages/accesorios.html">Accesorios</a></li>
                 </ul>
             </div>
-
             <!--Iconos de Redes Sociales y sus respectivos accesos directos-->
-            <div>
-                <h3 class="footer-subtitulos">Seguinos</h3>
+            <div class="footer-h3">
+                <h3>Seguinos</h3>
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
