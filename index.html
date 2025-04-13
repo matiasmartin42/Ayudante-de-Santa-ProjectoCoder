@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 </head>
 
@@ -37,59 +38,136 @@
     </header>
     <main>
         <div class="row">
-            <div class="col-lg-12 ">
+            <div class="col-12">
                 <img src="/assets/banner-catydogs.webp" alt="Banner" class="img-fluid w-100">
             </div>
         </div>
-        <!-- Sección de contenido con Grid -->
-        <section id="seccion-productos" class="py-4">
-            <div class="container">
-                <div class="row">
-                    <!-- Caja 1 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="img/gato1.jpg" class="card-img-top" alt="Alimento Perruno">
-                            <div class="card-body">
-                                <h5 class="card-title">Alimento Perruno</h5>
-                                <p class="card-text">
-                                    Aqui encontraras variedad de alimentos para tu perrito del hogar.
-                                </p>
-                                <a href="#" class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Caja 2 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="img/gato2.jpg" class="card-img-top" alt="Gato 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Gato Siamés</h5>
-                                <p class="card-text">
-                                    Descripción breve del gato siamés.
-                                </p>
-                                <a href="#" class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Caja 3 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="img/gato3.jpg" class="card-img-top" alt="Gato 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Gato Bengalí</h5>
-                                <p class="card-text">
-                                    Descripción breve del gato bengalí.
-                                </p>
-                                <a href="#" class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> <!-- row -->
-            </div> <!-- container -->
+        <!-- Sección promociones, envio y consultas-->
+        <section class="container container-prom">
+            <div class="row d-flex justify-content-center">
+                <div class="col-3 md-6 caja-prom">
+                    <img src="assets/earnings.png" alt="" width="55px">
+                    <img src="assets/credit-card.png" alt="" width="50px">
+                    <a href="" class="titulos-prom">Promociones bancarias</a>
+                </div>
+                <div class="col-3 md-6 caja-prom">
+                    <img src="assets/truck-kun.png" alt="" width="55px">
+                    <a href="" class="titulos-prom">Envios gratis a C.A.B.A y G.B.A</a>
+                </div>
+                <div class="col-3 md-6 caja-prom">
+                    <img src="assets/dialogue.png" alt="" width="50px">
+                    <a href="pages/contacto.html" class="titulos-prom">Consultas y reclamos</a>
+                </div>
+            </div>
         </section>
+        <!-- Sección de categorias -->
+        <section class="container categorias">
+            <div class="row d-flex d-flex justify-content-center align-items-center">
+                <div class="col-3 mb-6">
+                    <a class="d-flex justify-content-center" href="pages/perros.html"><img src="assets/perro.jpg"
+                            alt="Perros" width="200px" height="200px">
+                    </a>
+                    <div>
+                        <h5 class="d-flex justify-content-center">Perros</h5>
+                    </div>
+                </div>
+                <div class="col-3 mb-6"><a class="d-flex justify-content-center" href="pages/gatos.html"><img
+                            src="assets/mishi.jpg" alt="Gatos" width="200px" height="200px">
+                    </a>
+                    <h5 class="d-flex justify-content-center">Gatos</h5>
+                </div>
+                <div class="col-3 mb-6"><a class="d-flex justify-content-center" href=""><img src="assets/gorrion1.jpg"
+                            alt="Aves" width="200px" height="200px">
+                    </a>
+                    <h5 class="d-flex justify-content-center">Aves</h5>
+                </div>
+                <div class="col-3 mb-6"><a class="d-flex justify-content-center" href=""><img src="assets/nemo.jpg"
+                            alt="Peces" width="200px" height="200px">
+                    </a>
+                    <h5 class="d-flex justify-content-center">Peces</h5>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Sección de productos -->
+        <section>
+            <h2 class="d-flex justify-content-center">OPORTUNIDADES QUE NO PODES DESAPROVECHAR CUCHAU</h2>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <!-- Caja 1 -->
+                    <div class="col-2 md-4 sm-6">
+                        <div class="card">
+                            <img src="assets/proplanadult.webp" class="card-img-top" alt="Producto">
+                            <div class="card-body">
+                                <h5 class="card-title">Pro Plan Perro Adulto Raza Mediana x 15+3 Kg</h5>
+                                <span>Precio contado</span>
+                                <span>$85.997</span>
+                                <a href="" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Caja 2 -->
+                    <div class="col-2 md-4 sm-6">
+                        <div class="card">
+                            <img src="assets/Excellentperroadulto.webp" class="card-img-top" alt="Producto">
+                            <div class="card-body">
+                                <h5 class="card-title">Excellent Smart Formula Perro Adulto x 20 Kg</h5>
+                                <span>Precio contado</span>
+                                <span>$50.194</span>
+                                <a href="" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Caja 3 -->
+                    <div class="col-2 md-4 sm-6">
+                        <div class="card">
+                            <img src="assets/Exellentgatoadulto.webp" class="card-img-top" alt="Producto">
+                            <div class="card-body">
+                                <h5 class="card-title">Excellent Smart Gato Adulto Pollo, Carne y Arroz x 7,5 Kg</h5>
+                                <span>Precio contado</span>
+                                <span>$46.531</span>
+                                <a href="" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Caja 4 -->
+                    <div class="col-2 md-4 sm-6">
+                        <div class="card">
+                            <img src="assets/Proplangatoadulto.webp" class="card-img-top" alt="Producto">
+                            <div class="card-body">
+                                <h5 class="card-title">Pro Plan Gato Adulto x 7.5 Kg</h5>
+                                <span>Precio contado</span>
+                                <span>$76.997</span>
+                                <a href="" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Caja 5 -->
+                    <div class="col-2 md-4 sm-6">
+                        <div class="card">
+                            <img src="assets/Dogchowscoloranteadulto.webp" class="card-img-top" alt="Producto">
+                            <div class="card-body">
+                                <h5 class="card-title">Dog Chow S/ Colorante Adulto M/G X 21 Kg</h5>
+                                <span>Precio contado</span>
+                                <span>$54.568</span>
+                                <a href="" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
     </main>
     <footer class="footer-main">
         <section class="footer-box-section">
