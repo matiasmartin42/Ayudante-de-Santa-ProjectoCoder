@@ -17,72 +17,113 @@
 </head>
 
 <body>
-    <header class="row estilo-header">
-        <a class="col-2" href="../index.html"><img src="/assets/Logo ayudante de santa.png" alt="Ayudante-de-santa-logo"
-                class="logo-principal"></a>
-        <div class="barra-de-busqueda col-8 md-4 sm-2">
+    <header class="container-fluid estilo-header">
+        <div class="row align-items-center justify-content-between">
 
-            <div class="container">
-                <div class="barra-buscador">
-                    <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Buscar...">
-                        <button class="btn btn-outline-secondary" type="button">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
+            <!-- Logo -->
+
+            <div class="col-6 col-md-2 text-center text-md-start">
+                <a href="index.html">
+                    <img src="/assets/Logo ayudante de santa.png" alt="Logo" class="img-fluid logo-principal">
+                </a>
             </div>
-            <!--Menu nav bar-->
-            <nav class="menu-nav d-flex justify-content-center">
-                <ul class="barra-botones col-6 d-flex justify-content-around">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="perros.html">Perros</a></li>
-                    <li><a href="gatos.html">Gatos</a></li>
-                    <li><a href="accesorios.html">Accesorios</a></li>
-                </ul>
-            </nav>
+
+            <!-- Buscador -->
+
+            <div class="col-12 col-md-6">
+                <form class="input-group buscador-form mx-auto">
+                    <input type="search" class="form-control" placeholder="Buscar...">
+                    <button class="btn btn-outline-secondary" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Íconos -->
+
+            <div class="col-6 col-md-2 d-flex justify-content-end">
+                <a href="#">
+                    <img src="assets/user.png" alt="Usuario" width="25" height="25">
+                </a>
+                <a href="#" class="ms-3">
+                    <img src="assets/cart.png" alt="Carrito" width="25" height="25">
+                </a>
+            </div>
         </div>
 
+        <!-- Menú de navegación -->
+
+        <nav class="row menu-nav">
+            <ul class="barra-botones nav justify-content-center flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/perros.html">Perros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/gatos.html">Gatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/accesorios.html">Accesorios</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <footer class="footer-main">
-        <section class="footer-box-section">
-            <div class="footer-h3">
-                <h3>Sobre nosotros</h3>
-                <ul>
-                    <li>
-                        <a href="/pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-h3">
-                <h3>Categorias</h3>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="perros.html">Perros</a></li>
-                    <li><a href="gatos.html">Gatos</a></li>
-                    <li><a href="accesorios.html">Accesorios</a></li>
-                </ul>
-            </div>
-            <!--Iconos de Redes Sociales y sus respectivos accesos directos-->
-            <div class="footer-h3">
-                <h3>Seguinos</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
-                                src="assets/instagram-brands.svg" alt="" width="20px">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
-                                src="assets/facebook-brands.svg" alt="" width="20px"></a>
-                    </li>
-                    <li>
-                        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img
-                                src="assets/whatsapp-brands.svg" alt="" width="20px"></a>
-                    </li>
-                </ul>
+        <section class="footer-box-section container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-2 col-sm-12">
+                    <h3 class="footer-h3 d-flex justify-content-center">Categorias</h3>
+                    <ul class="lista-footer d-none d-lg-block">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="/pages/contacto.html">Contacto</a></li>
+                        <li><a href="/pages/perros.html">Perros</a></li>
+                        <li><a href="/pages/gatos.html">Gatos</a></li>
+                        <li><a href="/pages/accesorios.html">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <h3 class="footer-h3 d-flex justify-content-center">Sobre nosotros</h3>
+                    <ul class="lista-footer d-none d-lg-block">
+                        <li>
+                            <a href="/pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Iconos de Redes Sociales y sus respectivos accesos directos-->
+
+                <div class="col-lg-2 col-sm-12">
+                    <h3 class="footer-h3 d-flex justify-content-center">Seguinos</h3>
+                    <ul class="d-flex justify-content-center">
+                        <li class="col-lg-4 col-sm-1">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/instagram.png" alt="" width="30px">
+                            </a>
+                        </li>
+                        <li class="col-lg-4 col-sm-1">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/facebook.png" alt="" width="30px"></a>
+                        </li>
+                        <li class="col-lg-4 col-sm-1">
+                            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/whatsapp.png" alt="" width="30px"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <h3 class="footer-h3 d-flex justify-content-center">Formas de pago</h3>
+                    <div class="d-flex justify-content-center">
+                        <img class="col-lg-3  col-sm-1" src="assets/visa.png" alt="" width="40px">
+                        <img class="col-lg-3 col-sm-1" src="assets/visa-debito.png" alt="" width="40px">
+                        <img class="col-lg-3 col-sm-1" src="assets/mastercard.png" alt="" width="40px">
+                        <img class="col-lg-3 col-sm-1" src="assets/mercadopago.png" alt="" width="40px">
+                    </div>
+                </div>
             </div>
         </section>
     </footer>
