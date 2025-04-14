@@ -5,17 +5,6 @@ html {
 /* 1rem = 10px */
 
 
-
-/* PALETA DE COLORES "SUMMER"
-
-#FFEFA0
-#ffb24d
-#FCA652
-#AC4B1C
-
-
-*/
-
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -25,18 +14,28 @@ html {
 /*Estilos del Body general*/
 body {
     background-color: #fffdf2;
+    margin: 0;
+    padding: 0;
 
+    .container,
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
-
+html,
+body {
+    overflow-x: hidden;
+}
 
 
 
 /* Logo Principal */
 
 .logo-principal {
-    width: 30rem;
-    height: 100px;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -51,20 +50,20 @@ body {
 
 }
 
-.barra-de-busqueda {
+/*.barra-de-busqueda {
     text-align: center;
 }
 
 
 .barra-buscador {
-   
+
     max-width: 500px;
     margin: auto auto;
     margin-top: 20px;
 }
 
 .barra-buscador .input-group {
-   
+
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 2px 6px #0000001a;
@@ -81,9 +80,32 @@ body {
     padding: 10px 20px;
     background-color: white;
 }
+
 .barra-buscador .btn:hover {
     background-color: #ffb24d;
+}*/
+
+.buscador-form .form-control {
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 30px 0 0 30px;
 }
+
+.buscador-form .btn {
+    border: none;
+    border-radius: 0 30px 30px 0;
+    background-color: #fff;
+    padding: 0.8rem 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.buscador-form .btn:hover {
+    background-color: #ffb24d;
+}
+
+
+
 /* Estilos del Nav */
 .menu-nav {
     text-align: center;
@@ -92,8 +114,13 @@ body {
 .barra-botones {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    margin-bottom: 0px;
+}
+
+.barra-botones a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 
@@ -130,9 +157,18 @@ body {
 }
 
 /*Estilos de Productos*/
-.caja-producto:hover{
+
+.prod-titulo {
+    margin: 4%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.caja-producto:hover {
     border-color: #ffb24d;
 }
+
 .h-card {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -159,12 +195,29 @@ body {
     border-color: #ffa023;
 }
 
+/*Estilos de Marcas*/
+
+.marca a {
+    display: flex;
+    flex-direction: row;
+}
+
+.caja-img {
+    margin: 20px;
+}
+
+.marca .caja-img {
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
 
 /*Estilos de Footer general*/
 
 .footer-main {
-    background-color: #494848;
-    height: 100%;
+    background-color: #d69138;
+
 }
 
 .footer-box-section {
@@ -172,13 +225,24 @@ body {
     padding-bottom: 10px;
 }
 
-h3 {
+.footer-h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    background-color: white;
-    color: black;
-    margin: 0.5em;
-    padding: 0.5em;
+    font-weight: 700;
+    color: white;
+
+}
+
+.lista-footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.lista-footer li {
+    padding: 5px;
+    margin: 5px;
 }
 
 ul {
@@ -223,12 +287,12 @@ a {
 
 /* Responsive mobile */
 
-@media (max-width:500px) {
-    header {
-        flex-direction: column;
+@media (max-width: 500px) {
+    .header .row {
+        text-align: center;
     }
 
-    .caja-prom{
-        width: 80%;
+    .buscador-form {
+        width: 90%;
     }
 }

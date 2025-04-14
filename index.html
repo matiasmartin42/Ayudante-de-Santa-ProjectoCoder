@@ -17,60 +17,73 @@
 </head>
 
 <body>
-    <header class="row estilo-header">
-        <a class="col-2" href="index.html"><img src="/assets/Logo ayudante de santa.png" alt="Ayudante-de-santa-logo"
-                class="logo-principal"></a>
-        <div class="barra-de-busqueda col-8 md-4 sm-2">
-            <div class="container">
-                <div class="barra-buscador">
-                    <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Buscar...">
-                        <button class="btn btn-outline-secondary" type="button">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
+    <header class="container-fluid estilo-header">
+        <div class="row align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="col-6 col-md-2 text-center text-md-start">
+                <a href="index.html">
+                    <img src="/assets/Logo ayudante de santa.png" alt="Logo" class="img-fluid logo-principal">
+                </a>
             </div>
-            <!--Menu nav bar-->
-            <nav class="menu-nav d-flex justify-content-center">
-                <ul class="barra-botones col-6 d-flex justify-content-around">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                    <li><a href="pages/perros.html">Perros</a></li>
-                    <li><a href="pages/gatos.html">Gatos</a></li>
-                    <li><a href="pages/accesorios.html">Accesorios</a></li>
-                </ul>
-            </nav>
+            <!-- Buscador -->
+            <div class="col-12 col-md-6">
+                <form class="input-group buscador-form mx-auto">
+                    <input type="search" class="form-control" placeholder="Buscar...">
+                    <button class="btn btn-outline-secondary" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <!-- Íconos -->
+            <div class="col-6 col-md-2 d-flex justify-content-end">
+                <a href="#">
+                    <img src="assets/user.png" alt="Usuario" width="25" height="25">
+                </a>
+                <a href="#" class="ms-3">
+                    <img src="assets/cart.png" alt="Carrito" width="25" height="25">
+                </a>
+            </div>
         </div>
-
-        <div class="col-1 d-flex justify-content-around align-items-center">
-            <a href=""><img src="assets/user.png" alt="Usuario" width="25px" height="25px"></a>
-            <a href=""><img src="assets/cart.png" alt="Carrito" width="25px" height="25px"></a>
-
-
-
-
-        </div>
+        <!-- Menú de navegación -->
+        <nav class="row menu-nav">
+            <ul class="barra-botones nav justify-content-center flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/perros.html">Perros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/gatos.html">Gatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/accesorios.html">Accesorios</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div class="row">
+    <main class="container-fluid">
+        <div class="row align-items-center justify-content-between">
             <div class="col-12">
                 <img src="/assets/banner-catydogs.webp" alt="Banner" class="img-fluid w-100">
             </div>
         </div>
         <!-- Sección promociones, envio y consultas-->
         <section class="container container-prom">
-            <div class="row d-flex justify-content-center">
-                <div class="col-3 sm-10 caja-prom">
+            <div class="row text-center">
+                <div class="col-12 col-md-4 mb-3 caja-prom">
                     <img src="assets/earnings.png" alt="Billete" width="55px">
                     <img src="assets/credit-card.png" alt="Tarjeta" width="50px">
                     <a href="" class="titulos-prom">Promociones bancarias</a>
                 </div>
-                <div class="col-3 d-none d-lg-block caja-prom"> <!-- Display none en pantallas que no sean desktop-->
+                <div class="col-12 col-md-4 mb-3 caja-prom">
                     <img src="assets/truck-kun.png" alt="Envio" width="55px">
                     <a href="" class="titulos-prom">Envios gratis a C.A.B.A y G.B.A</a>
                 </div>
-                <div class="col-3 d-none d-lg-block caja-prom"> <!-- Display none en pantallas que no sean desktop-->
+                <div class="col-12 col-md-4 mb-3 caja-prom">
                     <img src="assets/dialogue.png" alt="Comentario" width="50px">
                     <a href="pages/contacto.html" class="titulos-prom">Consultas y reclamos</a>
                 </div>
@@ -78,29 +91,27 @@
         </section>
         <!-- Sección de categorias -->
         <section class="container categorias">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-3 mb-6">
-                    <a class="d-flex justify-content-center" href="pages/perros.html"><img src="assets/perro.jpg"
-                            alt="Perros" width="200px" height="200px">
+            <div class="row text-center">
+                <div class="col-6 col-md-3 mb-3">
+                    <a class="img-fluid rounded-circle" href="pages/perros.html"><img src="assets/perro.jpg"
+                            alt="Perros" width="150px" height="150px">
                     </a>
                     <div>
                         <h5 class="d-flex justify-content-center">Perros</h5>
                     </div>
                 </div>
-                <div class="col-3 mb-6"><a class="d-flex justify-content-center" href="pages/gatos.html"><img
-                            src="assets/mishi.jpg" alt="Gatos" width="200px" height="200px">
+                <div class="col-6 col-md-3 mb-3"><a class="img-fluid rounded-circle" href="pages/gatos.html"><img
+                            src="assets/mishi.jpg" alt="Gatos" width="150px" height="150px">
                     </a>
                     <h5 class="d-flex justify-content-center">Gatos</h5>
                 </div>
-                <div class="col-3 mb-6 d-none d-lg-block"><a class="d-flex justify-content-center" href=""><img
-                            src="assets/gorrion1.jpg" alt="Aves" width="200px" height="200px">
-                        <!-- Display none en pantallas que no sean desktop-->
+                <div class="col-6 col-md-3 mb-3"><a class="img-fluid rounded-circle" href=""><img
+                            src="assets/gorrion1.jpg" alt="Aves" width="150px" height="150px">
                     </a>
                     <h5 class="d-flex justify-content-center">Aves</h5>
                 </div>
-                <div class="col-3 mb-6 d-none d-lg-block"><a class="d-flex justify-content-center" href=""><img
-                            src="assets/nemo.jpg" alt="Peces" width="200px" height="200px">
-                        <!-- Display none en pantallas que no sean desktop-->
+                <div class="col-6 col-md-3 mb-3"><a class="img-fluid rounded-circle" href=""><img src="assets/nemo.jpg"
+                            alt="Peces" width="150px" height="150px">
                     </a>
                     <h5 class="d-flex justify-content-center">Peces</h5>
                 </div>
@@ -112,8 +123,8 @@
 
 
         <!-- Sección de productos -->
-        <section>
-            <h2 class="d-flex justify-content-center">OPORTUNIDADES QUE NO PODES DESAPROVECHAR CUCHAU</h2>
+        <section class="container products mb-5">
+            <h2 class="text-center mb-4 prod-titulo">OPORTUNIDADES QUE NO PODES DESAPROVECHAR!</h2>
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <!-- Caja 1 -->
@@ -193,87 +204,95 @@
             </div>
         </section>
         <section>
-            <section class="container categorias">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-2 mb-4">
-                        <a class="d-flex justify-content-center" href=""><img src="assets/perro.jpg"
-                                alt="Perros" width="100px" height="100px">
+            <section class="container marca">
+                <h2 class="d-flex justify-content-center prod-titulo">Nuestras marcas favoritas</h2>
+                <div class="row d-flex justify-content-around align-items-center caja-img">
+                    <div class="col-lg-2 xs-3">
+                        <a class="d-flex justify-content-center" href="https://oldprince.com.ar/en/inicio-english/"
+                            target="_blank"><img src="assets/old-prince.png" alt="marca" width="150px" height="50px">
                         </a>
                     </div>
-                    <div class="col-2 mb-4"><a class="d-flex justify-content-center" href=""><img
-                                src="assets/mishi.jpg" alt="Gatos" width="100px" height="100px">
+                    <div class="col-lg-2 xs-3"><a class="d-flex justify-content-center"
+                            href="https://www.eukanuba.com/ar" target="_blank"><img src="assets/eukanuba.png"
+                                alt="marca" width="150px" height="150px">
                         </a>
                     </div>
-                    <div class="col-2 mb-4 d-none d-lg-block"><a class="d-flex justify-content-center" href=""><img
-                                src="assets/gorrion1.jpg" alt="Aves" width="100px" height="100px">
-                            <!-- Display none en pantallas que no sean desktop-->
+                    <div class="col-lg-2 xs-3"><a class="d-flex justify-content-center"
+                            href="https://www.royalcanin.com/ar" target="_blank"><img src="assets/royal-canin-logo.png"
+                                alt="marca" width="150px" height="150px">
                         </a>
                     </div>
-                    <div class="col-2 mb-4 d-none d-lg-block"><a class="d-flex justify-content-center" href=""><img
-                                src="assets/nemo.jpg" alt="Peces" width="100px" height="100px">
-                            <!-- Display none en pantallas que no sean desktop-->
+                    <div class="col-lg-2 xs-3"><a class="d-flex justify-content-center" href="https://vitalcan.com/"
+                            target="_blank"><img src="assets/logo-vitalcan.svg" alt="marca" width="150px"
+                                height="150px">
                         </a>
-                        <div class="col-2 mb-4 d-none d-lg-block"><a class="d-flex justify-content-center" href=""><img
-                                    src="assets/mishi.jpg" alt="Gatos" width="100px" height="100px">
-                            </a>
-                        </div>
                     </div>
+                    <div class="col-lg-2 xs-3"><a class="d-flex justify-content-center"
+                            href="https://www.purina.com.ar/proplan" target="_blank"><img src="assets/purina-logo.png"
+                                alt="marca" width="150px" height="100px">
+                        </a>
+                    </div>
+                </div>
             </section>
         </section>
-
-
-
-
-
-
     </main>
 
-
-
-
-
     <footer class="footer-main">
-        <section class="footer-box-section">
-            <div class="footer-h3">
-                <h3>Sobre nosotros</h3>
-                <ul>
-                    <li>
-                        <a href="/pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-h3">
-                <h3>Categorias</h3>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="/pages/contacto.html">Contacto</a></li>
-                    <li><a href="/pages/perros.html">Perros</a></li>
-                    <li><a href="/pages/gatos.html">Gatos</a></li>
-                    <li><a href="/pages/accesorios.html">Accesorios</a></li>
-                </ul>
-            </div>
-            <!--Iconos de Redes Sociales y sus respectivos accesos directos-->
-            <div class="footer-h3">
-                <h3>Seguinos</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
-                                src="assets/instagram-brands.svg" alt="" width="20px">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
-                                src="assets/facebook-brands.svg" alt="" width="20px"></a>
-                    </li>
-                    <li>
-                        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img
-                                src="assets/whatsapp-brands.svg" alt="" width="20px"></a>
-                    </li>
-                </ul>
+        <section class="footer-box-section container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-2 col-sm-12">
+                    <h3 class="footer-h3 d-flex justify-content-center">Categorias</h3>
+                    <ul class="lista-footer d-none d-lg-block">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="/pages/contacto.html">Contacto</a></li>
+                        <li><a href="/pages/perros.html">Perros</a></li>
+                        <li><a href="/pages/gatos.html">Gatos</a></li>
+                        <li><a href="/pages/accesorios.html">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-12">
+                    <h3 class="footer-h3 d-flex justify-content-center">Sobre nosotros</h3>
+                    <ul class="lista-footer d-none d-lg-block">
+                        <li>
+                            <a href="/pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Iconos de Redes Sociales y sus respectivos accesos directos-->
+                <div class="col-lg-2 col-sm-12">
+                    <h3 class="footer-h3 d-flex justify-content-center">Seguinos</h3>
+                    <ul class="d-flex justify-content-center">
+                        <li class="col-lg-4 col-sm-1">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/instagram.png" alt="" width="30px">
+                            </a>
+                        </li>
+                        <li class="col-lg-4 col-sm-1">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/facebook.png" alt="" width="30px"></a>
+                        </li>
+                        <li class="col-lg-4 col-sm-1">
+                            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/whatsapp.png" alt="" width="30px"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Iconos de Redes Sociales y sus respectivos accesos directos-->
+                <div class="col-lg-2 col-sm-12">
+                    <h3 class="footer-h3 d-flex justify-content-center">Formas de pago</h3>
+                    <div class="d-flex justify-content-center">
+                        <img class="col-lg-3  col-sm-1" src="assets/visa.png" alt="" width="40px">
+                        <img class="col-lg-3 col-sm-1" src="assets/visa-debito.png" alt="" width="40px">
+                        <img class="col-lg-3 col-sm-1" src="assets/mastercard.png" alt="" width="40px">
+                        <img class="col-lg-3 col-sm-1" src="assets/mercadopago.png" alt="" width="40px">
+                    </div>
+                </div>
             </div>
         </section>
     </footer>
+
     <!--js bs-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
