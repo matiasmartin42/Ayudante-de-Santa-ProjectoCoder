@@ -55,16 +55,35 @@ body {
     text-align: center;
 }
 
-.buscador {
+
+.barra-buscador {
+   
+    max-width: 500px;
+    margin: auto auto;
     margin-top: 20px;
-    width: 622px;
-    padding: 10px;
-    border-radius: 20px;
-    border-color: #ffb24d;
-    border-top: #ffb24d;
-    border-left: #ffb24d;
 }
 
+.barra-buscador .input-group {
+   
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #0000001a;
+}
+
+.barra-buscador .form-control {
+    font-size: 14px;
+    border: none;
+    padding-left: 20px;
+}
+
+.barra-buscador .btn {
+    border: none;
+    padding: 10px 20px;
+    background-color: white;
+}
+.barra-buscador .btn:hover {
+    background-color: #ffb24d;
+}
 /* Estilos del Nav */
 .menu-nav {
     text-align: center;
@@ -76,6 +95,7 @@ body {
     padding: 10px;
     margin-bottom: 0px;
 }
+
 
 /* Promociones */
 .container-prom {
@@ -109,6 +129,35 @@ body {
 
 }
 
+/*Estilos de Productos*/
+.caja-producto:hover{
+    border-color: #ffb24d;
+}
+.h-card {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.text-precio {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ff9811;
+}
+
+.botn-precio {
+    margin: 0px;
+    background-color: #ffb24d;
+    border-color: #ffb24d;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.botn-precio:hover {
+    background-color: #ffa023;
+
+    border-color: #ffa023;
+}
 
 
 /*Estilos de Footer general*/
@@ -148,7 +197,6 @@ li {
 a {
     color: white;
     text-decoration: none;
-    margin: 30px;
     font-weight: bolder;
     font-size: medium;
 }
@@ -178,5 +226,9 @@ a {
 @media (max-width:500px) {
     header {
         flex-direction: column;
+    }
+
+    .caja-prom{
+        width: 80%;
     }
 }
