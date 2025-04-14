@@ -4,7 +4,6 @@ html {
 
 /* 1rem = 10px */
 
-
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -12,6 +11,7 @@ html {
 }
 
 /*Estilos del Body general*/
+
 body {
     background-color: #fffdf2;
     margin: 0;
@@ -29,8 +29,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 /* Logo Principal */
 
 .logo-principal {
@@ -38,13 +36,8 @@ body {
     height: auto;
 }
 
-
-
-
-
-
-
 /*Estilos de Header general*/
+
 .estilo-header {
     background-color: #ffb24d;
 
@@ -104,9 +97,8 @@ body {
     background-color: #ffb24d;
 }
 
-
-
 /* Estilos del Nav */
+
 .menu-nav {
     text-align: center;
 }
@@ -123,8 +115,8 @@ body {
     font-size: 1.5rem;
 }
 
-
 /* Promociones */
+
 .container-prom {
     margin-bottom: 20px;
     border-bottom: 1px solid #333333;
