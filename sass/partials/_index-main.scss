@@ -1,0 +1,90 @@
+@import "variables";
+/* Promociones */
+
+.container-prom {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333333;
+    padding: 30px;
+
+    .caja-prom {
+        @include flex;
+
+        .titulos-prom {
+            color: #313131;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+    }
+}
+
+.categorias {
+    img {
+        border-radius: 100%;
+    }
+
+    h5 {
+        font-size: 20px;
+        font-family: $font;
+        color: #313131;
+
+    }
+}
+
+/*Estilos de Productos*/
+
+.prod-titulo {
+    margin: 4%;
+    font-family: $font;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.caja-producto {
+    &:hover {
+        border-color: $naranja-fuerte;
+
+    }
+
+    .h-card {
+        font-family: $font;
+        font-weight: 600;
+    }
+
+    .text-precio {
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 800;
+        color: $naranja-fuerte;
+    }
+
+    .botn-precio {
+        margin: 0px;
+        background-color: $naranja;
+        border-color: $naranja;
+        font-size: 15px;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $naranja-fuerte;
+            border-color: $naranja-fuerte;
+        }
+
+    }
+}
+
+/*Estilos de Marcas*/
+
+.marca {
+    a {
+        @include flex-row(flex,row);
+    }
+
+    .caja-img {
+        margin: 20px;
+        max-width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+}

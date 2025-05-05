@@ -1,0 +1,46 @@
+@import "variables";
+/* Estilo contacto */
+
+.form-section {
+    max-width: 600px;
+    margin: 4% auto;
+    padding: 4%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #0000001a;
+    border-radius: 10px;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: $naranja-fuerte;
+    }
+
+    .form-label {
+        font-family: $font;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    .form-control,
+    textarea {
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+    }
+
+    .btn-enviar {
+        font-family: $font;
+        background-color: $naranja;
+        border: none;
+        padding: 0.75rem 2rem;
+        font-weight: bold;
+        font-size: 12px;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $naranja-fuerte;
+        }
+    }
+}

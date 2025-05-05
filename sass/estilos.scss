@@ -1,0 +1,43 @@
+
+
+@use "./partials/header-footer";
+@use "./partials/index-main";
+@use "./partials/contacto-main";
+
+@use "./partials/mediaQ";
+
+
+html {
+    font-size: 62.5%;
+}
+
+/* 1rem = 10px */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Estilos del Body general*/
+
+body {
+    background-color: #fffdf2;
+    margin: 0;
+    padding: 0;
+
+    .container,
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}

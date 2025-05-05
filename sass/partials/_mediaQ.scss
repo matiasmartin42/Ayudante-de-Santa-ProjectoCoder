@@ -1,0 +1,11 @@
+/* Responsive mobile */
+
+@media (max-width: 500px) {
+    .header .row {
+        text-align: center;
+    }
+
+    .buscador-form {
+        width: 90%;
+    }
+}

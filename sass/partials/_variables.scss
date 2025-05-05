@@ -1,0 +1,19 @@
+$font: "Montserrat", sans-serif;
+$naranja: #ffb24d;
+$naranja-fuerte: #ffa023;
+$naranja-oscuro: #d69138;
+
+//mixin sin parametros
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+//mixin con parametros
+
+@mixin flex-row ($display, $direction) {
+    display: $display;
+    flex-direction: $direction;
+}

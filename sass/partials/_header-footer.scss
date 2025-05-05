@@ -1,0 +1,105 @@
+@import "variables";
+
+
+/* Logo Principal */
+
+.logo-principal {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Estilos de Header general*/
+
+.estilo-header {
+    background-color: $naranja;
+
+    .buscador-form {
+        .form-control {
+            font-size: 1.4rem;
+            padding: 0.8rem 1rem;
+            border: none;
+            border-radius: 30px 0 0 30px;
+        }
+
+        .btn {
+            border: none;
+            border-radius: 0 30px 30px 0;
+            background-color: #fff;
+            padding: 0.8rem 1.2rem;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+
+                background-color: $naranja;
+            }
+        }
+
+    }
+
+    /* Estilos del Nav */
+
+    .menu-nav {
+        text-align: center;
+
+        .barra-botones {
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.6rem;
+            }
+
+            .nav-link {
+                color: white !important;
+
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+}
+
+/*Estilos de Footer general*/
+
+.footer-main {
+    background-color: $naranja-oscuro;
+
+    .footer-box-section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .footer-h3 {
+            font-family: $font;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+
+        }
+
+        .lista-footer {
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: medium;
+            }
+
+            li {
+                padding: 5px;
+                margin: 5px;
+            }
+
+        }
+    }
+
+}
