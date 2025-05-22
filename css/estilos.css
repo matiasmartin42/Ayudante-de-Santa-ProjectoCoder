@@ -7,6 +7,7 @@
 /*Estilos de Header general*/
 .estilo-header {
   background-color: #ffb24d;
+  /* Menu hamburguesa */
   /* Estilos del Nav */
 }
 .estilo-header .buscador-form .form-control {
@@ -21,9 +22,14 @@
   background-color: #fff;
   padding: 0.8rem 1.2rem;
   transition: background-color 0.3s ease;
+  z-index: 0;
 }
 .estilo-header .buscador-form .btn:hover {
   background-color: #ffb24d;
+}
+.estilo-header .abrir-menuh,
+.estilo-header .cerrar-menu {
+  display: none;
 }
 .estilo-header .menu-nav {
   text-align: center;
@@ -36,7 +42,7 @@
   color: white;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .estilo-header .menu-nav .barra-botones .nav-link {
   color: white !important;
@@ -180,12 +186,53 @@
 }
 
 /* Responsive mobile */
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
+  .estilo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
   .header .row {
     text-align: center;
   }
   .buscador-form {
     width: 90%;
+  }
+  .abrir-menuh,
+  .cerrar-menu {
+    display: block !important;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 80px;
+    background-color: #ffb24d;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu-nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .barra-botones {
+    flex-direction: column;
+    align-items: end;
+  }
+  .banner {
+    height: 300px;
   }
 }
 html {

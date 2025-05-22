@@ -28,6 +28,7 @@
             background-color: #fff;
             padding: 0.8rem 1.2rem;
             transition: background-color 0.3s ease;
+            z-index: 0;
 
             &:hover {
 
@@ -35,6 +36,13 @@
             }
         }
 
+    }
+
+    /* Menu hamburguesa */
+
+    .abrir-menuh,
+    .cerrar-menu {
+        display: none;
     }
 
     /* Estilos del Nav */
@@ -50,7 +58,7 @@
                 color: white;
                 text-decoration: none;
                 font-weight: 600;
-                font-size: 1.6rem;
+                font-size: 2rem;
             }
 
             .nav-link {
