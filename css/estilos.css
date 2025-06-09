@@ -114,6 +114,7 @@
 .caja-producto .h-card {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: 13px;
 }
 .caja-producto .text-precio {
   margin-top: 15px;
@@ -230,9 +231,6 @@
   .barra-botones {
     flex-direction: column;
     align-items: end;
-  }
-  .banner {
-    height: 300px;
   }
 }
 html {
